@@ -6,19 +6,23 @@ Agregando datos
 
 Entrenar
 
-![image](https://github.com/yanne23/practica_n4/assets/127661961/7bf4484b-4906-4b0a-8e39-d0ed3d2f4dce)
+![image](https://github.com/yanne23/practica_n4/assets/127661961/3180cee4-34c1-435c-9da4-a94760e231d4)
+
 
 Evaluar
 
-![image](https://github.com/yanne23/practica_n4/assets/127661961/ac8945ad-dc62-46d6-88ef-74b29e41dc97)
 
-![image](https://github.com/yanne23/practica_n4/assets/127661961/eb50e210-24fd-4409-aa78-c1a886e00b62)
+![image](https://github.com/yanne23/practica_n4/assets/127661961/f93a19e7-9f2f-4622-a5f6-97f08c088f17)
 
-![image](https://github.com/yanne23/practica_n4/assets/127661961/122d5f25-bc7d-4d55-bc3c-33c462af99e6)
+
+![image](https://github.com/yanne23/practica_n4/assets/127661961/26a25bb6-8206-4a67-a9d8-635f1c365ce5)
+
 
 -------------------------------------------------------------------------------------------------------------
 
-![image](https://github.com/yanne23/practica_n4/assets/127661961/8f962344-1f48-48b9-ac33-f04ad2430cdf)
+
+![image](https://github.com/yanne23/practica_n4/assets/127661961/916022e3-95eb-4406-ba10-afa6e948f6ca)
+
 
 
 
