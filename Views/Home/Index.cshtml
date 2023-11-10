@@ -70,6 +70,7 @@
                 </div>
                 <div class="card-body">
                     <form method="post" action="/Home/AnalyzeSentiment">
+
                         <div class="form-group">
                             <label for="sentimentText">Enter Text:</label>
                             <textarea class="form-control" id="sentimentText" name="text" rows="4" required></textarea>
@@ -86,14 +87,15 @@
                             <h3>Analysis Result:</h3>
                             <p class="lead">
                                 The sentiment is: 
-                                @if (ViewBag.Sentiment == 1)
-                                {
-                                    <span class="text-success">Positive</span>
-                                }
-                                else
-                                {
-                                    <span class="text-danger">Negative</span>
-                                }
+                                @if (ViewBag.Sentiment == "Positive")
+                                    {
+                                        <span class="text-success">Positive</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-danger">Negative</span>
+                                    }
+
                             </p>
                         </div>
                     }

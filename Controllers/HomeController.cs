@@ -18,8 +18,9 @@ namespace practica_n4.Controllers
 
             // Configurar el motor de predicción con el modelo entrenado
             var mlContext = new MLContext();
-            var mlModel = mlContext.Model.Load(SentimentModel.MLNetModelPath, out var _);
-            _predictionEngine = mlContext.Model.CreatePredictionEngine<SentimentModel.ModelInput, SentimentModel.ModelOutput>(mlModel);
+           var mlModel = mlContext.Model.Load(SentimentModel.MLNetModelPath, out var modelSchema);
+            _predictionEngine = mlContext.Model.CreatePredictionEngine<SentimentModel.ModelInput, SentimentModel.ModelOutput>(mlModel, modelSchema);
+
         }
 
         public IActionResult Index()
@@ -32,10 +33,10 @@ namespace practica_n4.Controllers
         {
             // Realizar la predicción de sentimiento
             var input = new SentimentModel.ModelInput { Col0 = text };
-            var prediction = SentimentModel.Predict(input);
+            var prediction = _predictionEngine.Predict(input);
 
             // Almacenar el resultado en ViewBag para mostrar en la vista
-            ViewBag.Sentiment = prediction.PredictedLabel;
+            ViewBag.Sentiment = prediction.PredictedLabel == 1 ? "Positive" : "Negative";
 
             // Volver a la vista Index para mostrar el resultado
             return View("Index");
@@ -52,7 +53,6 @@ namespace practica_n4.Controllers
             return View("Index");
         }
 
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -60,5 +60,3 @@ namespace practica_n4.Controllers
         }
     }
 }
-
-
