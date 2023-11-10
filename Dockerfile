@@ -11,6 +11,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /app
 COPY --from=build-env /app/out .
 
-ENV APP_NET_CORE practica_n4.dll
+ENV ASPNETCORE_URLS=http://*:80
+ENV ASPNETCORE_ENVIRONMENT=Production
 
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet $APP_NET_CORE
+CMD ["dotnet", "practica_n4.dll"]
