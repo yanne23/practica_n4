@@ -2,7 +2,66 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container mt-5">
+<style>
+    body {
+        background-color: #f5f5f5;
+    }
+
+    .container {
+        margin-top: 50px;
+        box-shadow: #2c3e50;
+    }
+
+    .card {
+        border: 1px solid #dcdcdc;
+        border-radius: 10px;
+    }
+
+    .card-header {
+        background-color: #EAD2D0; 
+        color: #2c3e50; 
+        border-radius: 10px 10px 0 0;
+    }
+
+    .btn-secondary {
+        background-color: #ffcccb; 
+        color: #d63031;
+
+    }
+
+    .btn-secondary:hover {
+        background-color: #d63031; 
+    }
+
+    .form-control {
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        background-color: #badc58; 
+        border-color: #badc58;
+        color: black;
+    }
+
+    .btn-primary:hover {
+        background-color: #badc58; 
+        border-color: #badc58;
+    }
+
+    .text-success {
+        color: rgb(0, 255, 42)244, 103); 
+    }
+
+    .text-danger {
+        color: #fe0303; 
+    }
+    
+    .form-group{
+        padding-bottom: 10px;
+    }
+</style>
+
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -17,6 +76,8 @@
                         </div>
                         
                         <button type="submit" class="btn btn-primary">Analyze Sentiment</button>
+
+                        <a asp-action="ClearText" class="btn btn-secondary ml-2">Clear Text</a>
                     </form>
 
                     @if (ViewBag.Sentiment != null)
@@ -41,4 +102,3 @@
         </div>
     </div>
 </div>
-
