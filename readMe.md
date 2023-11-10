@@ -27,6 +27,14 @@
 --------------------------------------------------------------------------------------------------------------
 # Aplicativo web
 
+![image](https://github.com/yanne23/practica_n4/assets/127661961/5fadc2a0-c4de-472f-a1bd-0d61fcc1fb37)
+
+resultado
+
+![image](https://github.com/yanne23/practica_n4/assets/127661961/b5b73171-ea7f-41ba-a828-b92f7a00b56f)
+
+
+
 
 
 
