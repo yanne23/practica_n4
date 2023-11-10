@@ -28,23 +28,30 @@ namespace practica_n4.Controllers
         }
 
         [HttpPost]
-public IActionResult AnalyzeSentiment(string text)
-{
-    // Realizar la predicción de sentimiento
-    var input = new SentimentModel.ModelInput { Col0 = text };
-    var prediction = SentimentModel.Predict(input);
+        public IActionResult AnalyzeSentiment(string text)
+        {
+            // Realizar la predicción de sentimiento
+            var input = new SentimentModel.ModelInput { Col0 = text };
+            var prediction = SentimentModel.Predict(input);
 
-    // Almacenar el resultado en ViewBag para mostrar en la vista
-    ViewBag.Sentiment = prediction.PredictedLabel;
+            // Almacenar el resultado en ViewBag para mostrar en la vista
+            ViewBag.Sentiment = prediction.PredictedLabel;
 
-    // Volver a la vista Index para mostrar el resultado
-    return View("Index");
-}
+            // Volver a la vista Index para mostrar el resultado
+            return View("Index");
+        }
 
         public IActionResult Privacy()
         {
             return View();
         }
+
+        public IActionResult ClearText()
+        {
+            ViewBag.Sentiment = null; // Limpiar el texto almacenado
+            return View("Index");
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
