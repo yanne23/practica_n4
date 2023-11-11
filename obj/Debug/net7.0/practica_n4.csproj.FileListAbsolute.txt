@@ -94,3 +94,9 @@ C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\runtimes\osx-arm64\
 C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\runtimes\osx-x64\native\libLdaNative.dylib
 C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\runtimes\win-x64\native\LdaNative.dll
 C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\runtimes\win-x86\native\LdaNative.dll
+C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\SentimentModel.zip
+C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\Microsoft.Extensions.ML.dll
+C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\yanne\Documents\GitHub\practica_n4\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
